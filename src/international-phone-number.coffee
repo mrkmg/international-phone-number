@@ -66,10 +66,6 @@ angular.module("internationalPhoneNumber", [])
       scope.$$postDigest ->
 
         if newValue != null && newValue != undefined && newValue.length > 0
-
-          if newValue[0] != '+'
-            newValue = '+' + newValue
-
           element.val newValue
 
         element.intlTelInput(options)
